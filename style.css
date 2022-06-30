@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.friends {
+padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  background: lightcoral;
+}
+
+.friends img {
+  width: 35px;
+  padding: 10px;
+  background: white;
+  border-radius: 100%;
+}
+
+.friendCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin-left: 5%;
+  padding: 15px 10px;
+  font-weight: bold;
+  background-color: bisque;
+  border-radius: 10%;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  background: lightseagreen;
+}
+
+.add-new-message {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+}
+
+.filter-input {
+  margin: 0 20px;
+}
+
+.messageCard {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
+  background-color: bisque;
+  border-radius: 10%;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.messages-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  background-color: bisque;
+}
+.gallery h2{
+  color: lightcoral;
+
+}
+.picture img {
+  border-radius: 10%;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .friends {
+    width: 25%;
+  }
+
+  .messages {
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .gallery {
+    display: flex;
+
+    width: 25%;
+  }
+}
